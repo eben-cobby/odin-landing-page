@@ -1,61 +1,181 @@
 body {
+  height: 100vh;
+  margin: 0;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
 }
 
+/* remove default formatting to links */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+/* remove link underlines */
 a {
   text-decoration: none;
 }
 
+/* add dark background
+color to header, hero*/
 .header,
 .hero,
 .footer {
   background-color: #1f2937;
 }
 
+/* format header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 12em;
+  margin-bottom: 1px;
+}
+
+/* make header menu align horizontally
+and add gap */
+.header-menu {
+  display: flex;
+  gap: 24px;
+}
+
+/* format header logo color and size*/
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+/* format hero section */
+.hero {
+  display: flex;
+  flex: 1 10 auto;
+  justify-content: space-between;
+  padding: 3em 12em;
+  gap: 1em;
+  flex-wrap: wrap-reverse;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  flex: 1 1 10%;
+  min-width: 300px;
+}
+.right img {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  padding: 6px 16px;
+  border-radius: 6px;
+  align-self: flex-start;
+  flex-shrink:0;
+}
+
+.hero button {
+  border-color: #1f2937;
+}
+
+/* change font colors and size of
+hero subtext, header menu and footer */
+.hero-sub,
+.header-menu a {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+/* format main hero text */
 .hero-main {
   font-size: 48px;
   font-size: extra-bold;
   color: #f9faf8;
 }
 
-.hero-secondary,
-.header-menu a,
-.footer{
-  font-size: 18px;
-  color: #e5e7eb;
-}
-
-.header-logo {
-  font-size: 24px;
-  color: #f9faf8;
-}
-
+/* format the button and  */
 button,
 .call-to-action {
   background-color: #3882f6;
+  color: white;
 }
 
+.items-container {
+  display: flex;
+  justify-content: center;
+  padding: 3em 10em;
+  gap: 42px;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 250px;
+  text-align:center;
+  }
+
+.item img {
+  width: 250px;
+  height: auto;
+  border-color: #3882f6;
+  border-radius: 12px;
+}
+
+/* format information text on tiles */
 .information-header {
   font-size: 36px;
   font-weight: extra-bold;
   color: #1f2937;
+  text-align: center;
+  margin: 12px;
 }
 .quote {
   background-color: #e5e7eb;
   color: #1f2937;
+  padding: 3em 12em;
 }
 
 .quote-text {
-    font-size: 36px;
-    font-weight: light;
-    font-style: italic;
-    color: #1f2937;
+  font-size: 36px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.quote-author {
+  text-align: right;
+  font-weight: bolder;
+}
+
+.call-to-action {
+  margin: 3em 12em;
+  border-radius: 6px;
+  min-height: auto;
+  padding: 2em 6em;
+  display: flex;
+  justify-content: space-between;
+  gap:24px;
+}
+.call-to-action .main-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.call-to-action button {
+  border-color: white;
+  align-self: center;
+}
+
+.footer {
+  font-size: 18px;
+  color: #e5e7eb;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

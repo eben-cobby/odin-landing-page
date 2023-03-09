@@ -7,9 +7,11 @@ To complete this project, I utilized the following skills:
 
 -HTML markup and semantics for content structure
 
--CSS for styling and layout
+-CSS for styling and layout 
 
--Git version control for managing project changes and collaboration with others
+-Git version control for managing project changes
+
+-Github repository management
 
 # author
 Ebenezer Cobbinah

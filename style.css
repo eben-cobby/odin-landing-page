@@ -1,3 +1,4 @@
+/* Set height to full viewport height, remove margin, and set font family */
 body {
   height: 100vh;
   margin: 0;
@@ -6,48 +7,46 @@ body {
   flex-direction: column;
 }
 
-/* remove default formatting to links */
+/* Remove default formatting to unordered list */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* remove link underlines */
+/* Remove link underlines */
 a {
   text-decoration: none;
 }
 
-/* add dark background
-color to header, hero*/
-.header,
+/* Add dark background color to header, hero, and footer */
+header,
 .hero,
 .footer {
   background-color: #1f2937;
 }
 
-/* format header */
-.header {
+/* Format header */
+header {
   display: flex;
   justify-content: space-between;
-  padding: 0.5em 12em;
+  padding: 0.5em  12em;
   margin-bottom: 1px;
-}
+  }
 
-/* make header menu align horizontally
-and add gap */
-.header-menu {
+/* Make header menu align horizontally and add gap */
+header ul {
   display: flex;
   gap: 24px;
 }
 
-/* format header logo color and size*/
-.header-logo {
+/* Format header logo color and size*/
+.logo {
   font-size: 24px;
   color: #f9faf8;
 }
 
-/* format hero section */
+/* Format hero section */
 .hero {
   display: flex;
   flex: 1 10 auto;
@@ -57,57 +56,58 @@ and add gap */
   flex-wrap: wrap-reverse;
 }
 
-.left {
+.hero-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   flex: 1;
 }
 
-.right {
+.hero img {
   display: flex;
   align-items: center;
   flex: 1 1 10%;
   min-width: 300px;
-}
-.right img {
   max-width: 100%;
   height: auto;
 }
+
+/* Format button */
 button {
   padding: 6px 16px;
   border-radius: 6px;
   align-self: flex-start;
-  flex-shrink:0;
+  flex-shrink: 0;
 }
 
+/* Format hero button */
 .hero button {
   border-color: #1f2937;
 }
 
-/* change font colors and size of
-hero subtext, header menu and footer */
-.hero-sub,
-.header-menu a {
+/* Change font colors and size of hero subtext, header menu, and footer */
+.hero p,
+header a {
   font-size: 18px;
   color: #e5e7eb;
 }
 
-/* format main hero text */
-.hero-main {
+/* Format main hero text */
+.hero h1 {
   font-size: 48px;
-  font-size: extra-bold;
+  font-weight: extra-bold;
   color: #f9faf8;
 }
 
-/* format the button and  */
+/* Format the button and call-to-action section */
 button,
 .call-to-action {
   background-color: #3882f6;
   color: white;
 }
 
-.items-container {
+/* Format tile container */
+.tile-container {
   display: flex;
   justify-content: center;
   padding: 3em 10em;
@@ -115,26 +115,28 @@ button,
   flex-wrap: wrap;
 }
 
-.item {
+.tile {
   width: 250px;
-  text-align:center;
-  }
+  text-align: center;
+}
 
-.item img {
+.tile img {
   width: 250px;
   height: auto;
-  border-color: #3882f6;
+  border: 2px solid #e5e7eb;
   border-radius: 12px;
 }
 
-/* format information text on tiles */
-.information-header {
+/* Format information text on tiles */
+.tiles h2 {
   font-size: 36px;
   font-weight: extra-bold;
   color: #1f2937;
   text-align: center;
   margin: 12px;
 }
+
+/* Format quote section */
 .quote {
   background-color: #e5e7eb;
   color: #1f2937;
@@ -159,9 +161,9 @@ button,
   padding: 2em 6em;
   display: flex;
   justify-content: space-between;
-  gap:24px;
+  gap: 24px;
 }
-.call-to-action .main-text {
+.call-to-action h2 {
   font-size: 22px;
   font-weight: 600;
 }

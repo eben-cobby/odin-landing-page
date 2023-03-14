@@ -7,52 +7,78 @@
     <title>Landing Page</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+
   <body>
-    <div class="header">
-      <div class="header-logo">EnjoyLife!</div>
-      <ul class="header-menu">
+    <!-- Header Section -->
+
+    <header>
+      <div class="logo">EnjoyLife!</div>
+      <ul>
         <li><a href="#">Destinations</a></li>
         <li><a href="#">Packages</a></li>
         <li><a href="#">About</a></li>
       </ul>
-    </div>
+    </header>
 
-    <div class="hero">
-      <div class="left">
-        <div class="hero-main">Discover the world with us.</div>
-        <div class="hero-sub">
+    <!-- Header Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover the world with us.</h1>
+        <p>
           Are you ready to embark on an adventure of a lifetime? Let us take you
           on a journey of discovery, as you escape the everyday and explore the
-        </div>
-        <button type="button">Sign up</button>
+          world.
+        </p>
+        <button>Sign up</button>
       </div>
-      <div class="right">
-        <img src="img/prague.jpg" alt="Prague, Czechia" />
-      </div>
-    </div>
+      <img src="img/prague.jpg" alt="Prague, Czechia" />
+    </section>
 
-    <div class="tiles">
-      <div class="information-header">Popular traveling destinations</div>
-      <div class="items-container">
-        <div class="item">
+    <!-- Tiles Section -->
+    <section class="tiles">
+      <h2>Popular traveling destinations</h2>
+      <div class="tile-container">
+        <div class="tile">
           <img src="img/paris.jpg" alt="Eiffel Tower, Paris" />
-          <div class="text">Paris, the city of lights and love, boasts iconic landmarks, world-renowned cuisine, and a rich cultural heritage.</div>
+          <div class="tile-content">
+            <p>
+              The city of lights and love, boasts iconic landmarks,
+              world-renowned cuisine, and a rich cultural heritage.
+            </p>
+          </div>
         </div>
-        <div class="item">
-          <img src="img/madrid.jpg" alt="Sunset view of Gran Via, Madrid " />
-          <div class="text">Experience the vibrant culture, mouth-watering cuisine, and breathtaking architecture of Madrid, the capital city of Spain.</div>
+        <div class="tile">
+          <img src="img/madrid.jpg" alt="Sunset view of Gran Via, Madrid" />
+          <div class="tile-content">
+            <p>
+              Experience the vibrant culture, mouth-watering cuisine, and
+              breathtaking architecture of Madrid, the capital city of Spain.
+            </p>
+          </div>
         </div>
-        <div class="item">
+        <div class="tile">
           <img src="img/nyc.jpg" alt="Times Square, New York City" />
-          <div class="text">New York City, the city that never sleeps, is a vibrant metropolis that offers a diverse array of experiences, from world-renowned attractions to hidden gems waiting to be discovered.</div>
+          <div class="tile-content">
+            <p>
+              The city that never sleeps, is a vibrant metropolis that offers a
+              diverse array of experiences, from world-renowned attractions to
+              hidden gems waiting to be discovered.
+            </p>
+          </div>
         </div>
-        <div class="item">
+        <div class="tile">
           <img src="img/beijing.jpg" alt="Forbidden City, Beijing" />
-          <div class="text">Beijing, the bustling capital city of China, boasts a rich history, vibrant culture, and impressive modern developments.</div>
+          <div class="tile-content">
+            <p>
+              The bustling capital city of China, boasts a rich history, vibrant
+              culture, and impressive modern developments.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <!-- Quote Section -->
     <div class="quote">
       <div class="quote-text">
         I appreciated the personalized service and felt that every aspect of the
@@ -63,15 +89,16 @@
       <div class="quote-author">-James - Accra, Ghana</div>
     </div>
 
-    <div class="call-to-action">
+    <!-- Call to Action section -->
+    <section class="call-to-action">
       <div class="message">
-        <div class="main-text">Wait are you waiting for! It's time!</div>
-        <div class="sub-text">
-          Sign up for our services by clicking on the button right over there!
-        </div>
+        <h2>What are you waiting for? It's time!</h2>
+        <p>Sign up for our services by clicking on the button below.</p>
       </div>
-      <button type="button">Sign up</button>
-    </div>
-    <div class="footer">Copyright @ Eben Cobby 2023</div>
+      <button>Sign up</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">Copyright @Eben Cobby 2023</footer>
   </body>
 </html>
